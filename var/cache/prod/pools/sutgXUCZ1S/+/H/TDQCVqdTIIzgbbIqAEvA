@@ -1,0 +1,96 @@
+<?php //%255B51d8144f72c6f627bbe45d03a939e590%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'now' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT m0_.id AS id_0, m0_.url AS url_1, m0_.api_type AS api_type_2, m0_.check_server AS check_server_3, m0_.add_found AS add_found_4, m0_.priority AS priority_5, m0_.next_check AS next_check_6, m0_.last_check AS last_check_7, m0_.updated_at AS updated_at_8, m0_.credentials_id AS credentials_id_9 FROM mirror_server m0_ WHERE m0_.next_check < ? AND m0_.next_check IS NOT NULL AND m0_.check_server = 1 ORDER BY m0_.priority DESC, m0_.last_check ASC LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    's' => 'App\\Entity\\Framework\\Mirror\\Server',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'url_1' => 'url',
+                    'api_type_2' => 'serverType',
+                    'check_server_3' => 'checkServer',
+                    'add_found_4' => 'addFoundFrameworks',
+                    'priority_5' => 'priority',
+                    'next_check_6' => 'nextCheck',
+                    'last_check_7' => 'lastCheck',
+                    'updated_at_8' => 'updatedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'credentials_id_9' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    's' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'credentials_id_9' => 'credentials_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 's',
+                    'url_1' => 's',
+                    'api_type_2' => 's',
+                    'check_server_3' => 's',
+                    'add_found_4' => 's',
+                    'priority_5' => 's',
+                    'next_check_6' => 's',
+                    'last_check_7' => 's',
+                    'updated_at_8' => 's',
+                    'credentials_id_9' => 's',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'url_1' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'api_type_2' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'check_server_3' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'add_found_4' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'priority_5' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'next_check_6' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'last_check_7' => 'App\\Entity\\Framework\\Mirror\\Server',
+                    'updated_at_8' => 'App\\Entity\\Framework\\Mirror\\Server',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,52 @@
+<?php //%255BApp%255CController%255CFramework%255CCfPackageController%2523exportAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Template'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Template')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/doc/{id}.{_format}',
+                '/doc/{id}/export.{_format}',
+            ],
+            'name' => [
+                'cfpackage_export',
+                'cfpackage_export2',
+            ],
+            'requirements' => [
+                [
+                    '_format' => '(json|html|pdf|csv)',
+                ],
+                [
+                    '_format' => '(json|html|pdf|csv)',
+                ],
+            ],
+            'defaults' => [
+                [
+                    '_format' => 'json',
+                ],
+                [
+                    '_format' => 'json',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

@@ -1,0 +1,18 @@
+ul.multiselect-container {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.js-github-list{
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+.js-github-list li{
+    cursor: pointer;
+}
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}

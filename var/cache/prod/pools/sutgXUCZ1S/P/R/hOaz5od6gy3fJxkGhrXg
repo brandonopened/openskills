@@ -1,0 +1,177 @@
+<?php //%255BApp%255CEntity%255CFramework%255CLsDefGrade%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Framework\\LsDefGrade',
+            ],
+            'namespace' => [
+                'App\\Entity\\Framework',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Framework\\LsDefGrade',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\Framework\\LsDefGradeRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'changedAt' => [
+                        'fieldName' => 'changedAt',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 6,
+                        'columnName' => 'changed_at',
+                        'declared' => 'App\\Entity\\Framework\\AbstractLsBase',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'code',
+                    ],
+                    'rank' => [
+                        'fieldName' => 'rank',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'rank',
+                    ],
+                    'title' => [
+                        'fieldName' => 'title',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 1024,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'title',
+                    ],
+                    'description' => [
+                        'fieldName' => 'description',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'description',
+                    ],
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'identifier' => [
+                        'fieldName' => 'identifier',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 300,
+                        'unique' => true,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'identifier',
+                    ],
+                    'uri' => [
+                        'fieldName' => 'uri',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 300,
+                        'unique' => true,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'uri',
+                    ],
+                    'extra' => [
+                        'fieldName' => 'extra',
+                        'type' => 'json',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'extra',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 6,
+                        'columnName' => 'updated_at',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'changed_at' => 'changedAt',
+                    'code' => 'code',
+                    'rank' => 'rank',
+                    'title' => 'title',
+                    'description' => 'description',
+                    'id' => 'id',
+                    'identifier' => 'identifier',
+                    'uri' => 'uri',
+                    'extra' => 'extra',
+                    'updated_at' => 'updatedAt',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'changedAt' => 'changed_at',
+                    'code' => 'code',
+                    'rank' => 'rank',
+                    'title' => 'title',
+                    'description' => 'description',
+                    'id' => 'id',
+                    'identifier' => 'identifier',
+                    'uri' => 'uri',
+                    'extra' => 'extra',
+                    'updatedAt' => 'updated_at',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'ls_def_grade',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

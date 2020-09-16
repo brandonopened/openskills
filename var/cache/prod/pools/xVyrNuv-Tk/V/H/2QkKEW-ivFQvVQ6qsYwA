@@ -1,0 +1,110 @@
+<?php //%255BApp%255CController%255CApi%255CCaseV1P0Controller%2523getObjectAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/CFAssociationGroupings/{id}.{_format}',
+                '/CFAssociations/{id}.{_format}',
+                '/CFDocuments/{id}.{_format}',
+                '/CFItems/{id}.{_format}',
+                '/CFLicenses/{id}.{_format}',
+                '/CFRubrics/{id}.{_format}',
+                '/CFRubricCriteria/{id}.{_format}',
+                '/CFRubricCriterionLevels/{id}.{_format}',
+            ],
+            'name' => [
+                'api_v1p0_cfassociationgrouping',
+                'api_v1p0_cfassociation',
+                'api_v1p0_cfdocument',
+                'api_v1p0_cfitem',
+                'api_v1p0_cflicense',
+                'api_v1p0_cfrubric',
+                'api_v1p0_cfrubriccriterion',
+                'api_v1p0_cfrubriccriterionlevel',
+            ],
+            'defaults' => [
+                [
+                    'class' => 'App\\Entity\\Framework\\LsDefAssociationGrouping',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\LsAssociation',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\LsDoc',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\LsItem',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\LsDefLicence',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\CfRubric',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\CfRubricCriterion',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\CfRubricCriterionLevel',
+                    '_format' => 'json',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+        $o[5],
+        $o[6],
+        $o[7],
+    ],
+    []
+); }];

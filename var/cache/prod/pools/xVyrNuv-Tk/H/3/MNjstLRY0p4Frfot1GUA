@@ -1,0 +1,108 @@
+<?php //%255BApp%255CEntity%255CFramework%255CLsAssociation%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['JMS\\Serializer\\Annotation\\VirtualProperty'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\VirtualProperty')),
+        clone ($p['JMS\\Serializer\\Annotation\\SerializedName'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\SerializedName')),
+        clone ($p['JMS\\Serializer\\Annotation\\Expose'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Expose')),
+        clone ($p['JMS\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Groups')),
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'ls_association',
+                'dest_id_idx',
+                'orig_id_idx',
+                4 => 'cfDocumentUri',
+                'CFDocumentURI',
+                8 => 'cfAssociationGroupingUri',
+                'CFAssociationGroupingURI',
+                11 => 'originNodeUri',
+                'originNodeURI',
+                14 => 'associationType',
+                'associationType',
+                17 => 'destinationNodeUri',
+                'destinationNodeURI',
+            ],
+            'indexes' => [
+                [
+                    $o[1],
+                    $o[2],
+                ],
+            ],
+            'columns' => [
+                1 => [
+                    'destination_node_identifier',
+                ],
+                [
+                    'origin_node_identifier',
+                ],
+            ],
+            'repositoryClass' => [
+                3 => 'App\\Repository\\Framework\\LsAssociationRepository',
+            ],
+            'exp' => [
+                4 => 'service(\'App\\\\Service\\\\Api1Uris\').getLinkUri(object.getLsDoc())',
+                8 => 'service(\'App\\\\Service\\\\Api1Uris\').getLinkUri(object.getGroup())',
+                11 => 'service(\'App\\\\Service\\\\Api1Uris\').getNodeLinkUri(\'origin\', object)',
+                14 => 'service(\'App\\\\Service\\\\Api1Uris\').formatAssociationType(object.getType())',
+                17 => 'service(\'App\\\\Service\\\\Api1Uris\').getNodeLinkUri(\'destination\', object)',
+            ],
+            'options' => [
+                4 => [
+                    $o[5],
+                    $o[6],
+                    $o[7],
+                ],
+                8 => [
+                    $o[9],
+                    $o[10],
+                ],
+                11 => [
+                    $o[12],
+                    $o[13],
+                ],
+                14 => [
+                    $o[15],
+                    $o[16],
+                ],
+                17 => [
+                    $o[18],
+                    $o[19],
+                ],
+            ],
+            'groups' => [
+                7 => [
+                    'LsAssociation',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[3],
+        $o[4],
+        $o[8],
+        $o[11],
+        $o[14],
+        $o[17],
+    ],
+    []
+); }];

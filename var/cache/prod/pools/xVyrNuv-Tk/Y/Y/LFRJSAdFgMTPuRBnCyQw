@@ -1,0 +1,90 @@
+<?php //%255BApp%255CController%255CFramework%255CDocTreeController%2523viewAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Entity')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Template'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Template')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/doc/{slug}',
+                '/doc/{slug}/av',
+                '/doc/{slug}/lv',
+                '/doc/{slug}/{assocGroup}',
+            ],
+            'name' => [
+                'doc_tree_view',
+                'doc_tree_view_av',
+                'doc_tree_view_log',
+                'doc_tree_view_ag',
+            ],
+            'requirements' => [
+                [
+                    'slug' => '[a-zA-Z0-9.-]+',
+                ],
+                [
+                    'slug' => '[a-zA-Z0-9.-]+',
+                ],
+                [
+                    'slug' => '[a-zA-Z0-9.-]+',
+                ],
+                [
+                    'slug' => '[a-zA-Z0-9.-]+',
+                ],
+            ],
+            'defaults' => [
+                [
+                    'lsItemId' => null,
+                ],
+                [
+                    'lsItemId' => null,
+                ],
+                [
+                    'lsItemId' => null,
+                ],
+                [
+                    'lsItemId' => null,
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\ParamConverter' => [
+            'name' => [
+                4 => 'lsDoc',
+            ],
+            'options' => [
+                4 => [
+                    'expr' => 'repository.findOneBySlug(slug)',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+        $o[5],
+    ],
+    []
+); }];

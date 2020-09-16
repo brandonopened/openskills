@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $(dirname $0)/..
+
+echo "Gulp is no longer used, instead please use: "
+echo "    "$(dirname $0)"/encore production"
+
+./bin/encore production

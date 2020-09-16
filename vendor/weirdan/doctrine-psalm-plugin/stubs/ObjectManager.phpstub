@@ -1,0 +1,33 @@
+<?php
+
+namespace Doctrine\Common\Persistence;
+
+interface ObjectManager
+{
+    /**
+     * @param class-string<T> $className
+     *
+     * @return ObjectRepository<T>
+     *
+     * @template T
+     */
+    public function getRepository(string $className);
+
+    /**
+     * @param class-string<T> $className
+     *
+     * @return Mapping\ClassMetadata<T>
+     *
+     * @template T
+     */
+    public function getClassMetadata(string $className);
+
+    /**
+     * @param class-string<T> $className
+     *
+     * @return ?T
+     *
+     * @template T
+     */
+    public function find(string $className, $id);
+}

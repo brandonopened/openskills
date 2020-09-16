@@ -1,0 +1,220 @@
+<?php //%255BApp%255CEntity%255CFramework%255CMirror%255CServer%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Framework\\Mirror\\Server',
+            ],
+            'namespace' => [
+                'App\\Entity\\Framework\\Mirror',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Framework\\Mirror\\Server',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\Framework\\Mirror\\ServerRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'url' => [
+                        'fieldName' => 'url',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'url',
+                    ],
+                    'serverType' => [
+                        'fieldName' => 'serverType',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'api_type',
+                    ],
+                    'checkServer' => [
+                        'fieldName' => 'checkServer',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'check_server',
+                    ],
+                    'addFoundFrameworks' => [
+                        'fieldName' => 'addFoundFrameworks',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'add_found',
+                    ],
+                    'priority' => [
+                        'fieldName' => 'priority',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'options' => [
+                            'default' => 0,
+                        ],
+                        'columnName' => 'priority',
+                    ],
+                    'nextCheck' => [
+                        'fieldName' => 'nextCheck',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'next_check',
+                    ],
+                    'lastCheck' => [
+                        'fieldName' => 'lastCheck',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'last_check',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 6,
+                        'columnName' => 'updated_at',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'url' => 'url',
+                    'api_type' => 'serverType',
+                    'check_server' => 'checkServer',
+                    'add_found' => 'addFoundFrameworks',
+                    'priority' => 'priority',
+                    'next_check' => 'nextCheck',
+                    'last_check' => 'lastCheck',
+                    'updated_at' => 'updatedAt',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'url' => 'url',
+                    'serverType' => 'api_type',
+                    'checkServer' => 'check_server',
+                    'addFoundFrameworks' => 'add_found',
+                    'priority' => 'priority',
+                    'nextCheck' => 'next_check',
+                    'lastCheck' => 'last_check',
+                    'updatedAt' => 'updated_at',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'mirror_server',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'credentials' => [
+                        'fieldName' => 'credentials',
+                        'joinColumns' => [
+                            [
+                                'name' => 'credentials_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Framework\\Mirror\\OAuthCredential',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Framework\\Mirror\\Server',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'credentials_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'credentials_id' => 'credentials_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'credentials_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'frameworks' => [
+                        'fieldName' => 'frameworks',
+                        'mappedBy' => 'server',
+                        'targetEntity' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Framework\\Mirror\\Server',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

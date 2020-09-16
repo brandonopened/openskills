@@ -1,0 +1,54 @@
+<?php //%255BApp%255CController%255CApi%255CCaseV1P0Controller%2523getCfItemAssociationsAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Entity')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/CFItemAssociations/{id}.{_format}',
+                '/CFItems/{id}/associations.{_format}',
+            ],
+            'name' => [
+                'api_v1p0_cfitemassociations',
+                'api_v1p0_cfitemassociations2',
+            ],
+            'defaults' => [
+                [
+                    '_format' => 'json',
+                ],
+                [
+                    '_format' => 'json',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\ParamConverter' => [
+            'name' => [
+                2 => 'obj',
+            ],
+            'options' => [
+                2 => [
+                    'expr' => 'repository.findOneByIdentifier(id)',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

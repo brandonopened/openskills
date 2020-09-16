@@ -1,0 +1,55 @@
+<?php //%255BApp%255CController%255CApi%255CCaseV1P0Controller%2523getObjectCollectionAction%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/CFConcepts/{id}.{_format}',
+                '/CFItemTypes/{id}.{_format}',
+                '/CFSubjects/{id}.{_format}',
+            ],
+            'name' => [
+                'api_v1p0_cfconcept',
+                'api_v1p0_cfitemtype',
+                'api_v1p0_cfsubject',
+            ],
+            'defaults' => [
+                [
+                    'class' => 'App\\Entity\\Framework\\LsDefConcept',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\LsDefItemType',
+                    '_format' => 'json',
+                ],
+                [
+                    'class' => 'App\\Entity\\Framework\\LsDefSubject',
+                    '_format' => 'json',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

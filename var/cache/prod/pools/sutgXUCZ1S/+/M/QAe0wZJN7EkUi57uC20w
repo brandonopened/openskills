@@ -1,0 +1,9 @@
+<?php //%255BApp%255CEntity%255CFramework%255CCfRubricCriterionLevel%255C%2524GEDMO_TIMESTAMPABLE_CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, [
+    'update' => [
+        'changedAt',
+        'updatedAt',
+    ],
+    'useObjectClass' => 'App\\Entity\\Framework\\CfRubricCriterionLevel',
+]];

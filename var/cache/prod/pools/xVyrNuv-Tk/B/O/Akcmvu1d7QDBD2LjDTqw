@@ -1,0 +1,104 @@
+<?php //%255BApp%255CEntity%255CFramework%255CLsDoc%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone $p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'],
+        clone $p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'],
+        clone ($p['JMS\\Serializer\\Annotation\\VirtualProperty'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\VirtualProperty')),
+        clone ($p['JMS\\Serializer\\Annotation\\SerializedName'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\SerializedName')),
+        clone ($p['JMS\\Serializer\\Annotation\\Expose'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Expose')),
+        clone ($p['JMS\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('JMS\\Serializer\\Annotation\\Groups')),
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+        clone $p['JMS\\Serializer\\Annotation\\VirtualProperty'],
+        clone $p['JMS\\Serializer\\Annotation\\SerializedName'],
+        clone $p['JMS\\Serializer\\Annotation\\Expose'],
+        clone $p['JMS\\Serializer\\Annotation\\Groups'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'ls_doc',
+                5 => 'cfPackageUri',
+                'CFPackageURI',
+                9 => 'subjectUri',
+                'subjectURI',
+                12 => 'licenseUri',
+                'licenseURI',
+                15 => 'updatedAt',
+                'updatedAt',
+            ],
+            'repositoryClass' => [
+                1 => 'App\\Repository\\Framework\\LsDocRepository',
+            ],
+            'fields' => [
+                2 => 'uri',
+                'urlName',
+                'identifier',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                ],
+                [
+                    'Default',
+                ],
+                [
+                    'Default',
+                ],
+                8 => [
+                    'LsDoc',
+                ],
+                18 => [
+                    'updatedAt',
+                ],
+            ],
+            'exp' => [
+                5 => 'service(\'App\\\\Service\\\\Api1Uris\').getLinkUri(object, \'api_v1p0_cfpackage\')',
+                9 => '(object.getSubjects().count()===0)?null:service(\'App\\\\Service\\\\Api1Uris\').getLinkUriList(object.getSubjects())',
+                12 => 'service(\'App\\\\Service\\\\Api1Uris\').getLinkUri(object.getLicence())',
+                15 => 'object.getUpdatedAt()',
+            ],
+            'options' => [
+                5 => [
+                    $o[6],
+                    $o[7],
+                    $o[8],
+                ],
+                9 => [
+                    $o[10],
+                    $o[11],
+                ],
+                12 => [
+                    $o[13],
+                    $o[14],
+                ],
+                15 => [
+                    $o[16],
+                    $o[17],
+                    $o[18],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+        $o[5],
+        $o[9],
+        $o[12],
+        $o[15],
+    ],
+    []
+); }];

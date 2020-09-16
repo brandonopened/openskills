@@ -1,0 +1,191 @@
+<?php //%255BApp%255CEntity%255CFramework%255CObjectLock%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Framework\\ObjectLock',
+            ],
+            'namespace' => [
+                'App\\Entity\\Framework',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Framework\\ObjectLock',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\Framework\\ObjectLockRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'timeout' => [
+                        'fieldName' => 'timeout',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 6,
+                        'columnName' => 'expiry',
+                    ],
+                    'objectType' => [
+                        'fieldName' => 'objectType',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'obj_type',
+                    ],
+                    'objectId' => [
+                        'fieldName' => 'objectId',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'obj_id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'expiry' => 'timeout',
+                    'obj_type' => 'objectType',
+                    'obj_id' => 'objectId',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'timeout' => 'expiry',
+                    'objectType' => 'obj_type',
+                    'objectId' => 'obj_id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'salt_object_lock',
+                    'indexes' => [
+                        'expiry_idx' => [
+                            'columns' => [
+                                'expiry',
+                            ],
+                        ],
+                    ],
+                    'uniqueConstraints' => [
+                        'lock_obj_idx' => [
+                            'columns' => [
+                                'obj_type',
+                                'obj_id',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'user' => [
+                        'fieldName' => 'user',
+                        'joinColumns' => [
+                            [
+                                'name' => 'user_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\User\\User',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Framework\\ObjectLock',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'user_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'user_id' => 'user_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'user_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'doc' => [
+                        'fieldName' => 'doc',
+                        'joinColumns' => [
+                            [
+                                'name' => 'doc_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Framework\\LsDoc',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Framework\\ObjectLock',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'doc_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'doc_id' => 'doc_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'doc_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

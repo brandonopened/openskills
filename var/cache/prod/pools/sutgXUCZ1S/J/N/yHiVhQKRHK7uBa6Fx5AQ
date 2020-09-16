@@ -1,0 +1,123 @@
+<?php //%255Bca12f7f30e6df18f6db3a7e30594d8b5%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'now' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT m0_.id AS id_0, m0_.url AS url_1, m0_.identifier AS identifier_2, m0_.creator AS creator_3, m0_.title AS title_4, m0_.include AS include_5, m0_.priority AS priority_6, m0_.status AS status_7, m0_.status_count AS status_count_8, m0_.last_check AS last_check_9, m0_.last_success AS last_success_10, m0_.last_failure AS last_failure_11, m0_.last_change AS last_change_12, m0_.next_check AS next_check_13, m0_.error_type AS error_type_14, m0_.updated_at AS updated_at_15, m0_.last_content AS last_content_16, m0_.last_success_content AS last_success_content_17, m0_.server_id AS server_id_18 FROM mirror_framework m0_ WHERE m0_.next_check < ? AND m0_.next_check IS NOT NULL AND m0_.include = 1 ORDER BY m0_.priority DESC, m0_.last_check ASC LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'f' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'url_1' => 'url',
+                    'identifier_2' => 'identifier',
+                    'creator_3' => 'creator',
+                    'title_4' => 'title',
+                    'include_5' => 'include',
+                    'priority_6' => 'priority',
+                    'status_7' => 'status',
+                    'status_count_8' => 'statusCount',
+                    'last_check_9' => 'lastCheck',
+                    'last_success_10' => 'lastSuccess',
+                    'last_failure_11' => 'lastFailure',
+                    'last_change_12' => 'lastChange',
+                    'next_check_13' => 'nextCheck',
+                    'error_type_14' => 'errorType',
+                    'updated_at_15' => 'updatedAt',
+                    'last_content_16' => 'lastContent',
+                    'last_success_content_17' => 'lastSuccessContent',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'server_id_18' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'f' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'server_id_18' => 'server_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'f',
+                    'url_1' => 'f',
+                    'identifier_2' => 'f',
+                    'creator_3' => 'f',
+                    'title_4' => 'f',
+                    'include_5' => 'f',
+                    'priority_6' => 'f',
+                    'status_7' => 'f',
+                    'status_count_8' => 'f',
+                    'last_check_9' => 'f',
+                    'last_success_10' => 'f',
+                    'last_failure_11' => 'f',
+                    'last_change_12' => 'f',
+                    'next_check_13' => 'f',
+                    'error_type_14' => 'f',
+                    'updated_at_15' => 'f',
+                    'last_content_16' => 'f',
+                    'last_success_content_17' => 'f',
+                    'server_id_18' => 'f',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'url_1' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'identifier_2' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'creator_3' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'title_4' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'include_5' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'priority_6' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'status_7' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'status_count_8' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'last_check_9' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'last_success_10' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'last_failure_11' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'last_change_12' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'next_check_13' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'error_type_14' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'updated_at_15' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'last_content_16' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                    'last_success_content_17' => 'App\\Entity\\Framework\\Mirror\\Framework',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
